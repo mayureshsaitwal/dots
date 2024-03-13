@@ -1,0 +1,5 @@
+#!/bin/sh
+
+killall mpvpaper
+mpvpaper -o "no-audio" DP-1 /mnt/win2/Wallpapers/spacewall.mp4 &!
+#mpvpaper -o "no-audio loop" DP-1 /mnt/win2/Wallpapers/New/berserk.mkv &!

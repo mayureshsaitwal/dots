@@ -1,0 +1,7 @@
+#!/bin/bash
+
+wob -c $HOME/.config/wob.ini &!
+if [ ! -e /tmp/wobpipe ]; then
+  mkfifo /tmp/wobpipe
+fi
+tail -f /tmp/wobpipe | wob 

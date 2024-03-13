@@ -1,0 +1,13 @@
+#!/bin/sh
+
+id=$(bspc query -N -n .hidden)
+title=$(xtitle $id)
+
+#echo $id
+
+if [[ -z $id ]]
+then
+	bspc node $id -g hidden=on
+else
+	bspc node $id -g hidden=off
+fi

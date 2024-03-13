@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+CURRENT_SINK=$(pacmd stat | grep "Default sink name" | sed 's/.*: *//')
+
+if [ "$CURRENT_SINK" == "alsa_output.usb-Conexant_CONEXANT_USB_AUDIO_000000000000-00.analog-stereo" ]
+then
+    hyprctl keyword general:col.active_border "rgba(ff7500ee) rgba(ce00ffee) 45deg" 
+else
+    hyprctl keyword general:col.active_border "rgba(33ccffee) rgba(00ff99ee) 45deg"
+fi

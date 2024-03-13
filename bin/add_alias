@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+echo -n "\nAlias Name : " 
+read alias_name
+
+echo -n "Command : "
+read command_exec
+
+sed -i "81 i alias $alias_name\=\"$command_exec\"" $HOME/.zshrc &>/dev/null
+echo "\nalias ${alias_name}=${command_exec} has been added to aliases list\n"

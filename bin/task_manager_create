@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+kitty --class task_manager -c /bin/zsh bpytop

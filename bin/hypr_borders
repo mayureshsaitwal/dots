@@ -1,0 +1,32 @@
+#!/bin/bash
+
+speaker=(ee33ccff ee00ff99)
+headphone=(ee4848b5 eeb548b5)
+wireless=(ee0080FF ee0012FF) 
+mute=77cb5555
+
+case $1 in 
+  speaker)
+    hyprctl keyword general:col.active_border "0x${speaker[0]}" "0x${speaker[1]}" 45deg
+    ;;
+
+  headphone)
+    hyprctl keyword general:col.active_border "0x${headphone[0]}" "0x${headphone[1]}" 45deg
+    ;;
+
+  mute)
+    hyprctl keyword general:col.active_border "0x$mute"
+    ;;
+
+  *)
+    hyprctl keyword general:col.active_border "0x${speaker[0]}" "0x${speaker[1]}" 45deg
+    ;;
+esac
+
+
+# if [ $1 == speaker ]
+# then
+#   hyprctl keyword general:col.active_border "0x${speaker[0]}" "0x${speaker[1]}" 45deg
+# else
+#   hyprctl keyword general:col.active_border "0x${headphone[0]}" "0x${headphone[1]}" 45deg
+# fi
