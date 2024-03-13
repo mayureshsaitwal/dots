@@ -1,0 +1,18 @@
+## Theme
+
+if [[ ! -d "$HOME/.zsh/pure" ]]; then
+  # install_theme
+  git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+fi
+
+# install_theme() {
+#   # sed -i "$a    "
+# }
+fpath+=($HOME/.zsh/pure)
+    print() {
+  [ 0 -eq $# -a "prompt_pure_precmd" = "${funcstack[-1]}" ] || builtin print "$@";
+}
+autoload -Uz promptinit
+promptinit
+prompt pure
+

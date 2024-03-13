@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ ! -f /usr/bin/wihotspot ]]; then
+  git clone https://github.com/lakinduakash/linux-wifi-hotspot
+  cd linux-wifi-hotspot
+  make
+  sudo make install
+  cd ..
+  rm -rf linux-wifi-hotspot
+fi
