@@ -1,5 +1,12 @@
 #!/bin/bash
 
+### Yellow Color 
+
+# package=nc
+#
+# if ! pacman -Qs $package > /dev/null; then
+#     sudo pacman -S
+
 status=0
 
 do_on=("/home/user/bin/online.wav"

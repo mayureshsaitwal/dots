@@ -208,3 +208,12 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
+
+# Flutter
+export ANDROID_HOME=$HOME/Android/Sdk/
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk/
+export ANDROID_AVD_HOME=$HOME/.android/avd/ 
+# export PATH=$PATH:$HOME/Code/Flutter/flutter/bin/
+# export PATH=$PATH:$HOME/Code/Flutter/Android/SDK/cmdline-tools/tools//bin/
+
+
