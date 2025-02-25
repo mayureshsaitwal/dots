@@ -28,7 +28,7 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
 			},
 			auto_attach = true,
 			attach_to_untracked = false,
-			current_line_blame = false, -- Toggle with `:Gitsigns toggle_current_line_blame`
+			current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
 			current_line_blame_opts = {
 				virt_text = true,
 				virt_text_pos = "eol", -- 'eol' | 'overlay' | 'right_align'
@@ -52,14 +52,14 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
 			},
 		},
 	},
-	{
-		"f-person/git-blame.nvim",
-		event = "VeryLazy",
-		opts = {
-			enabled = true,
-			message_template = " <summary> • <date> • <author>",
-			date_format = "%d-%m-%Y %H:%M:%S",
-			virtual_text_column = 1,
-		},
-	},
+	-- {
+	-- 	"f-person/git-blame.nvim",
+	-- 	event = "VeryLazy",
+	-- 	opts = {
+	-- 		enabled = true,
+	-- 		message_template = " <summary> • <date> • <author>",
+	-- 		date_format = "%d-%m-%Y %H:%M:%S",
+	-- 		virtual_text_column = 1,
+	-- 	},
+	-- },
 }
