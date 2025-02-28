@@ -29,6 +29,19 @@ return {
 			silent = false,
 		})
 
+		require("mini.animate").setup({
+			scroll = {
+				-- Whether to enable this animation
+				enable = true,
+
+				-- Timing of animation (how steps will progress in time)
+				-- timing = --<function: implements linear total 250ms animation duration>,
+
+				-- Subscroll generator based on total scroll
+				-- subscroll = --<function: implements equal scroll with at most 60 steps>,
+			},
+		})
+
 		-- require("mini.splitjoin").setup()
 
 		-- require("mini.move").setup()

@@ -11,7 +11,7 @@ return {
 		},
 		keys = {
 			{
-				"ss",
+				"f",
 				mode = { "n", "x", "o" },
 				function()
 					require("flash").jump()

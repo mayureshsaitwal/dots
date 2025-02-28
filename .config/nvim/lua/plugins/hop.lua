@@ -1,5 +1,6 @@
 return {
 	"smoka7/hop.nvim",
+	enabled = false,
 	version = "*",
 	config = function()
 		-- you can configure Hop the way you like here; see :h hop-config

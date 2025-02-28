@@ -34,6 +34,9 @@ export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
+export XDG_SCREENSHOTS_DIR="$HOME/Screenshots"
+export HYPRSHOT_DIR="$HOME/Screenshots"
+
 
 source ~/.zsh/alias.zsh
 source ~/.zsh/binds.zsh

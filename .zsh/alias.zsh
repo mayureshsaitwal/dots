@@ -44,3 +44,5 @@ alias nv="env -u WAYLAND_DISPLAY neovide"
 alias tl="teams-for-linux"
 
 alias sd="cd ~ && cd \$(find * -type d | fzf)"
+alias nrd="npm run dev"
+alias ars="php artisan serve"
