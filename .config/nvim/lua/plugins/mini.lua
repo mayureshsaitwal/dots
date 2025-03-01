@@ -186,6 +186,16 @@ return {
 			set_vim_settings = true,
 			tabpage_section = "left",
 		})
-		-- require("mini.trailspace").setup()
+		require("mini.trailspace").setup()
+		require("mini.notify").setup({
+			lsp_progress = {
+				enable = false,
+			},
+			window = {
+				config = {},
+				max_width_share = 0.382,
+				winblend = 25,
+			},
+		})
 	end,
 }
