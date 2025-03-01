@@ -12,11 +12,15 @@ autoload -Uz _zinit
 
 
 zinit light zsh-users/zsh-syntax-highlighting
-zinit snippet OMZ::plugins/git/git.plugin.zsh
 zinit snippet OMZ::plugins/bgnotify/bgnotify.plugin.zsh
 zinit light zsh-users/zsh-autosuggestions
 zinit load agkozak/zsh-z
 zinit light zimfw/input
+zinit snippet OMZL::git.zsh
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::command-not-found
 #zinit ice pick"async:zsh"
 #zinit load mafredi/zsh-async
 #zinit load mafredri/zsh-async, from:"github", use:"async.zsh"
@@ -33,3 +37,4 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
+

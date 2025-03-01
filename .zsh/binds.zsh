@@ -26,7 +26,11 @@
 # # completion in the middle of a line
 # bindkey '^i' expand-or-complete-prefix
 
+# Dont want Vi mode
+bindkey -e
 
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-bindkey  "^[[3~"  delete-char
+bindkey "^[[H"   beginning-of-line
+bindkey "^[[F"   end-of-line
+bindkey "^[[3~"  delete-char
+bindkey "^W"     kill-whole-line
+bindkey "^U"     autosuggest-accept

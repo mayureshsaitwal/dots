@@ -9,10 +9,24 @@
 HISTFILE=~/.zsh_history
 HISTSIZE=100000000
 SAVEHIST=100000000
-setopt INC_APPEND_HISTORY
-setopt HIST_FIND_NO_DUPS
-setopt HIST_IGNORE_DUPS
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+# setopt INC_APPEND_HISTORY
+# setopt HIST_FIND_NO_DUPS
+# setopt HIST_IGNORE_DUPS
 
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 export LANG=en_US.UTF-8
 # If you come from bash you might have to change your $PATH.
@@ -21,18 +35,6 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 # Created by `pipx` on 2021-05-19 06:37:44
 export PATH="$PATH:/home/jd1t/.local/bin"
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-export LANGUAGE=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LC_CTYPE=en_US.UTF-8
 
 export XDG_SCREENSHOTS_DIR="$HOME/Screenshots"
 export HYPRSHOT_DIR="$HOME/Screenshots"
@@ -43,8 +45,10 @@ source ~/.zsh/binds.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/zinit.zsh
 
-# Dont want Vi mode
-bindkey -e
+autoload -Uz compinit && compinit
 
 # Composer
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
+# Shell integrations
+eval "$(fzf --zsh)"

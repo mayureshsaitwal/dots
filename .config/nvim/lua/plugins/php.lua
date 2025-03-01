@@ -15,14 +15,14 @@ return {
 		},
 		event = { "VeryLazy" },
 		opts = {
-			lsp_server = "phpactor",
+			lsp_server = "intelephense",
 		},
 		config = true,
 	},
 	{
 		-- "drafolin/phpactor.nvim",
 		"gbprod/phpactor.nvim",
-		-- enabled = false,
+		enabled = false,
 		build = function()
 			require("phpactor.handler.update")()
 		end,

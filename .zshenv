@@ -1,2 +1,3 @@
 export ZDOTDIR=$HOME/.zsh
-export WOBPIPE=/tmp/wobpipe
+export PATH="$PATH:/home/jd1t/.local/bin"
+# export WOBPIPE=/tmp/wobpipe

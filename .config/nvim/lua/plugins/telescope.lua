@@ -3,6 +3,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
 	event = "VeryLazy",
 	branch = "0.1.x",
 	dependencies = {
+		"nvim-telescope/telescope-live-grep-args.nvim",
 		"nvim-lua/plenary.nvim",
 		{ -- If encountering errors, see telescope-fzf-native README for install instructions
 			"nvim-telescope/telescope-fzf-native.nvim",
@@ -75,6 +76,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		pcall(require("telescope").load_extension, "fzf")
 		pcall(require("telescope").load_extension, "ui-select")
 		pcall(require("telescope").load_extension, "projects")
+		pcall(require("telescope").load_extension, "live_grep_args")
 
 		-- See `:help telescope.builtin`
 		local builtin = require("telescope.builtin")
@@ -95,9 +97,15 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "[F]ind current [W]ord" })
 		-- vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "[F]ind by [G]rep" })
 		vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "[F]ind [D]iagnostics" })
-		vim.keymap.set("n", "<leader>fr", builtin.resume, { desc = "[F]ind [R]esume" })
+		-- vim.keymap.set("n", "<leader>fr", builtin.resume, { desc = "[F]ind [R]esume" })
 		vim.keymap.set("n", "<leader>f.", builtin.oldfiles, { desc = '[F]ind Recent Files ("." for repeat)' })
 		vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
+		vim.keymap.set(
+			"n",
+			"<leader>fr",
+			":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+			{ desc = "[F]ind Live grep with args" }
+		)
 
 		-- Slightly advanced example of overriding default behavior and theme
 		vim.keymap.set(
