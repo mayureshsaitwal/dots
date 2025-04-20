@@ -30,6 +30,9 @@ return {
 		})
 
 		require("mini.animate").setup({
+			cursor = {
+				enable = true,
+			},
 			scroll = {
 				-- Whether to enable this animation
 				enable = true,
