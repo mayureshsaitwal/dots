@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-CURRENT_SINK=$(pacmd stat | grep "Default sink name" | sed 's/.*: *//')
+# CURRENT_SINK=$(pacmd stat | grep "Default sink name" | sed 's/.*: *//')
+CURRENT_SINK=$(pactl get-default-sink)
 
 if [ "$CURRENT_SINK" == "alsa_output.usb-Conexant_CONEXANT_USB_AUDIO_000000000000-00.analog-stereo" ]
 then
