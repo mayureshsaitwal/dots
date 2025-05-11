@@ -162,4 +162,3 @@ return {
 		signature = { enabled = true, window = { border = "single" } },
 	},
 }
-

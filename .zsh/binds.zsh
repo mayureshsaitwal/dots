@@ -29,6 +29,15 @@
 # Dont want Vi mode
 bindkey -e
 
+# Delete till / or word
+backward-kill-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-kill-word
+    zle -f kill
+}
+zle -N backward-kill-dir
+bindkey '^[^?' backward-kill-dir
+
 bindkey "^[[H"   beginning-of-line
 bindkey "^[[F"   end-of-line
 bindkey "^[[3~"  delete-char

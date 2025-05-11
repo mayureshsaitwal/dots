@@ -48,3 +48,5 @@ alias sd="cd ~ && cd \$(find * -type d | fzf)"
 alias nrd="npm run dev"
 alias ars="php artisan serve"
 alias crd="composer run dev"
+
+alias py="python3"

@@ -38,8 +38,8 @@ local options = {
 	scrolloff = 8, -- is one of my fav
 	sidescrolloff = 8,
 	modifiable = true,
-	-- loaded_netrw = 1,
-	-- loaded_netrwPlugin = 1,
+	loaded_netrw = 1,
+	loaded_netrwPlugin = 1,
 	-- nvim_tree_respect_buf_cwd = 1,
 	-- guifont = "Cascadia Code:h12.0",               -- the font used in graphical neovim applications
 }

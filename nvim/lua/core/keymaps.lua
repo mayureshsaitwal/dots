@@ -96,7 +96,7 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Delete instead of cut
 keymap("n", "dd", '"_dd', opts)
--- keymap("v", "dd", '"_dd', opts)
+keymap("v", "dd", '"_dd', opts)
 keymap("v", "x", '"_x', opts)
 keymap("n", "c", '"_c', opts)
 keymap("v", "c", '"_c', opts)
