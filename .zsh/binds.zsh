@@ -43,3 +43,7 @@ bindkey "^[[F"   end-of-line
 bindkey "^[[3~"  delete-char
 bindkey "^W"     kill-whole-line
 bindkey "^U"     autosuggest-accept
+
+# Rebrand fzf keybind
+bindkey -r '^T'
+bindkey '^U' fzf-file-widget

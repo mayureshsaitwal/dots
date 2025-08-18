@@ -39,6 +39,8 @@ export PATH="$PATH:/home/jd1t/.local/bin"
 export XDG_SCREENSHOTS_DIR="$HOME/Screenshots"
 export HYPRSHOT_DIR="$HOME/Screenshots"
 
+# Shell integrations
+eval "$(fzf --zsh)"
 
 source ~/.zsh/alias.zsh
 source ~/.zsh/binds.zsh
@@ -50,7 +52,5 @@ autoload -Uz compinit && compinit
 # Composer
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
-# Shell integrations
-eval "$(fzf --zsh)"
 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

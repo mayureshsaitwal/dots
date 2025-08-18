@@ -1,7 +1,7 @@
 #### Aliases ####
 
-alias szrc="source .zsh/.zshrc"
-alias zrc="v .zsh/.zshrc"
+alias szrc="source ~/.zsh/.zshrc"
+alias zrc="v ~/.zsh/.zshrc"
 alias vrc="v ~/.vim/vimrc"
 alias xrc="v ~/.xinitrc"
 alias brc="v ~/.config/bspwm/bspwmrc"
@@ -50,3 +50,12 @@ alias ars="php artisan serve"
 alias crd="composer run dev"
 
 alias py="python3"
+alias src="source $HOME/bin/activate_python_env.sh"
+
+
+alias dpql="docker-compose exec db psql -U jd1t -d voice_db"
+alias dm="docker-compose exec web python manage.py"
+alias du="docker compose up -d --build"
+alias dd="docker compose down"
+alias ssh="kitty +kitten ssh"
+alias dr="docker rm -vf $(docker ps -aq)"
