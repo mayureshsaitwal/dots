@@ -3,7 +3,7 @@ local trigger_text = "!"
 return {
 	"saghen/blink.cmp",
 	-- optional: provides snippets for the snippet source
-	dependencies = { "Kaiser-Yang/blink-cmp-dictionary" },
+	-- dependencies = { "Kaiser-Yang/blink-cmp-dictionary" },
 	version = "*",
 	enabled = function()
 		local filetype = vim.bo[0].filetype
@@ -54,7 +54,7 @@ return {
 			ghost_text = { enabled = false },
 		},
 		sources = {
-			default = { "snippets", "lsp", "path", "buffer", "dictionary" },
+			default = { "snippets", "lsp", "path", "buffer" },
 			providers = {
 				lsp = {
 					name = "lsp",
@@ -132,16 +132,16 @@ return {
 						return items
 					end,
 				},
-				dictionary = {
-					module = "blink-cmp-dictionary",
-					name = "Dict",
-					score_offset = 20, -- the higher the number, the higher the priority
-					-- https://github.com/Kaiser-Yang/blink-cmp-dictionary/issues/2
-					enabled = true,
-					max_items = 8,
-					min_keyword_length = 2,
-					opts = {},
-				},
+				-- dictionary = {
+				-- 	module = "blink-cmp-dictionary",
+				-- 	name = "Dict",
+				-- 	score_offset = 20, -- the higher the number, the higher the priority
+				-- 	-- https://github.com/Kaiser-Yang/blink-cmp-dictionary/issues/2
+				-- 	enabled = true,
+				-- 	max_items = 8,
+				-- 	min_keyword_length = 2,
+				-- 	opts = {},
+				-- },
 			},
 		},
 		cmdline = {
@@ -162,4 +162,3 @@ return {
 		signature = { enabled = true, window = { border = "single" } },
 	},
 }
-
