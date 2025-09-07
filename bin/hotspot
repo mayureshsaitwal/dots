@@ -1,4 +1,4 @@
-# /usr/bin/env zsh
+#!/bin/bash
 # vim:set ft=.sh:
 
-sudo lnxrouter --ap wlo1 "Go Go Router Rangers" -p "Qwerty?123" --daemon
+lnxrouter --ap wlo1 "Go Go Router Rangers" -p "Qwerty?123" --daemon

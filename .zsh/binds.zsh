@@ -46,4 +46,4 @@ bindkey "^U"     autosuggest-accept
 
 # Rebrand fzf keybind
 bindkey -r '^T'
-bindkey '^U' fzf-file-widget
+# bindkey '^U' fzf-file-widget

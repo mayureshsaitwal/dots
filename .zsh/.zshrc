@@ -52,5 +52,17 @@ autoload -Uz compinit && compinit
 # Composer
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
+# Starship
+eval "$(starship init zsh)"
+
+# Direnv
+eval "$(direnv hook zsh)"
 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+
+# Start tmux
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   exec tmux new -s main
+# fi
+

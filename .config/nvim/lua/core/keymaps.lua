@@ -187,3 +187,6 @@ keymap("v", ".", "gcc", opts)
 keymap("n", "<leader>xx", "<cmd>source %<CR>", opts)
 
 keymap("n", "<leader>e", "<cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<cr>", opts)
+
+-- Select All
+keymap("n", "<C-a>", "ggVG", opts)

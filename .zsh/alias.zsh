@@ -59,3 +59,7 @@ alias du="docker compose up -d --build"
 alias dd="docker compose down"
 alias ssh="kitty +kitten ssh"
 alias dr="docker rm -vf $(docker ps -aq)"
+
+alias tks="tmux kill-session"
+alias ta="tmux attach -t"
+alias tn="tmux new -s"
