@@ -1,7 +1,9 @@
 #### Aliases ####
 
+alias suspend="systemctl hybrid-sleep"
 alias szrc="source ~/.zsh/.zshrc"
 alias zrc="v ~/.zsh/.zshrc"
+alias nx="niri-session"
 alias vrc="v ~/.vim/vimrc"
 alias xrc="v ~/.xinitrc"
 alias brc="v ~/.config/bspwm/bspwmrc"
@@ -18,6 +20,7 @@ alias ash="v ~/bin/autostart.sh"
 alias pos="v ~/bin/polybar_on_startup"
 alias guc="github-upload-cloud"
 alias hrc="v ~/.config/hypr/hyprland.conf"
+alias nrc="v ~/.config/niri/config.kdl"
 alias yeet="yay -Rsn"
 alias plt="yay -S --noconfirm"
 alias dig="sudo pacman -Qe | grep"

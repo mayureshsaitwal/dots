@@ -1,6 +1,6 @@
 vim.lsp.enable({
 	"lua_ls",
-  "pyright",
+  "basedpyright",
 })
 
 vim.diagnostic.config({
