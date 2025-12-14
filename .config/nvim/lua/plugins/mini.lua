@@ -117,7 +117,10 @@ return {
 			tabpage_section = "left",
 		})
 		require("mini.trailspace").setup()
+		-- keys = {
+		-- },
+		require("mini.pairs").setup()
+
+		-- require("mini.comment").setup()
 	end,
-	-- keys = {
-	-- },
 }

@@ -12,7 +12,24 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
--- vim.api.nvim_create_autocmd("BufWritePost", {
+-- Auto insert mode when entering terminal buffer
+vim.api.nvim_create_autocmd("TermEnter", {
+	group = vim.api.nvim_create_augroup("Term-Insert", { clear = true }),
+	callback = function()
+		vim.cmd("startinsert!")
+	end,
+})
+-- vim.api.nvim_create_autocmd({ "BufEnter", "TermOpen" }, {
+-- 	desc = "Automatically inserts when terminal is focused",
+-- 	pattern = "*",
+-- 	callback = function()
+-- 		if vim.api.nvim_buf_get_option(0, "buftype") == "terminal" then
+-- 			vim.cmd(":startinsert")
+-- 			-- vim.api.nvim_feedkeys("i", "n", true)
+-- 		end
+-- 	end,
+-- })
+-- -- vim.api.nvim_create_autocmd("BufWritePost", {
 -- 	desc = "Remove Trailines",
 -- 	group = vim.api.nvim_create_augroup("MiniTrailspace", { clear = true }),
 -- 	callback = function()

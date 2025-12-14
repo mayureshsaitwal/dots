@@ -18,6 +18,8 @@ return {
 				typescript = { "prettierd", "prettier", stop_after_first = true },
 				yaml = { "prettierd", "prettier", stop_after_first = true },
 				json = { "fixjson" },
+				kdl = { "kdlfmt" },
+				cpp = { "clang-format" },
 				-- yaml = { "yamlfmt" },
 			},
 		})

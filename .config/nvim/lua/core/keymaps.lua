@@ -190,3 +190,6 @@ keymap("n", "<leader>e", "<cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<
 
 -- Select All
 keymap("n", "<C-a>", "ggVG", opts)
+
+-- Close Window
+keymap({ "n", "i" }, "<C-w>", "<cmd>bd<CR>", opts)

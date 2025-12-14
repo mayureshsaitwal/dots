@@ -58,7 +58,7 @@ eval "$(starship init zsh)"
 # Direnv
 eval "$(direnv hook zsh)"
 
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+# [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 
 # Start tmux

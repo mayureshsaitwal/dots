@@ -12,11 +12,16 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
-vim.api.nvim_create_autocmd("BufWritePost", {
-	desc = "Remove Trailines",
-	group = vim.api.nvim_create_augroup("MiniTrailspace", { clear = true }),
-	callback = function()
-		require("mini.trailspace").trim()
-		require("mini.trailspace").trim_last_lines()
-	end,
-})
+-- vim.cmd([[ autocmd TermOpen * startinsert ]])
+-- vim.cmd([[ autocmd WinEnter if &buftype == 'terminal' * startinsert endif ]])
+--
+-- vim.cmd([[autocmd BufEnter * if &buftype == 'terminal' | call feedkeys("i") | endif]])
+-- vim.cmd([[autocmd BufEnter * if &buftype == 'terminal' | call feedkeys("i") | endif]])
+-- vim.api.nvim_create_autocmd("BufWritePost", {
+-- 	desc = "Remove Trailines",
+-- 	group = vim.api.nvim_create_augroup("MiniTrailspace", { clear = true }),
+-- 	callback = function()
+-- 		require("mini.trailspace").trim()
+-- 		require("mini.trailspace").trim_last_lines()
+-- 	end,
+-- })

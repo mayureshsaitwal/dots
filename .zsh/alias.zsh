@@ -1,6 +1,6 @@
 #### Aliases ####
 
-alias suspend="systemctl hybrid-sleep"
+alias suspend="systemctl suspend"
 alias szrc="source ~/.zsh/.zshrc"
 alias zrc="v ~/.zsh/.zshrc"
 alias nx="niri-session"
@@ -61,8 +61,10 @@ alias dm="docker-compose exec web python manage.py"
 alias du="docker compose up -d --build"
 alias dd="docker compose down"
 alias ssh="kitty +kitten ssh"
-alias dr="docker rm -vf $(docker ps -aq)"
+# alias dr="docker rm -vf $(docker ps -aq)"
 
 alias tks="tmux kill-session"
 alias ta="tmux attach -t"
 alias tn="tmux new -s"
+
+alias grc="nvim ~/.config/ghostty/config"
