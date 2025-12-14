@@ -801,7 +801,7 @@ binds {
         spawn "brave"
     }
     Mod+Alt+Shift+T {
-        spawn-sh "cat ~/.pass/repo >> wl-copy && notify-send 'Token Copied'"
+        spawn-sh "cat ~/.pass/repo | wl-copy && notify-send 'Token Copied'"
     }
 }
 // Niri Dms
