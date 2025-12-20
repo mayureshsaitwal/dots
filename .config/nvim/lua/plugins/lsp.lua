@@ -6,8 +6,12 @@ return {
 			"basedpyright",
 			"clangd",
 			"ruff",
+			"rust-analyzer",
 		})
 
+		-- local capabilities = require("blink.cmp").get_lsp_capabilities()
+		--   capabilities.textDocument.onTypeFormatting = { dynamicRegistration = false }
+		-- vim.lsp.on_type_formatting.enable()
 		vim.diagnostic.config({
 			-- virtual_lines = true, -- virtual_text = true,
 			-- underline = true,
