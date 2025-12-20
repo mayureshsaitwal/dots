@@ -1,0 +1,4 @@
+# Suspend the system when battery level drops to 5% or lower
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="[0-10]", RUN+="/usr/bin/systemctl hibernate"
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="[6-10]", RUN+="/usr/bin/notify-send 'Battery <= 10%'"
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="[15]", RUN+="/usr/bin/notify-send 'Battery at 15%'"
