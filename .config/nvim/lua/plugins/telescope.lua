@@ -13,9 +13,10 @@ return {
 			end,
 		},
 		{ "nvim-telescope/telescope-ui-select.nvim" },
-		-- { 'nvim-tree/nvim-web-devicons' }
+		-- { 'nvim-tree/nvim-web-devicons }
 	},
 	config = function()
+		local actions = require("telescope.actions")
 		require("telescope").setup({
 			defaults = {
 				mappings = {
@@ -23,6 +24,8 @@ return {
 						-- ["<C-u>"] = false,
 						-- ["<C-d>"] = false,
 						["<C-h>"] = "which_key",
+						["<C-j>"] = actions.move_selection_next,
+						["<C-k>"] = actions.move_selection_previous,
 						["JK"] = "close",
 					},
 					n = {
@@ -32,7 +35,7 @@ return {
 			},
 			-- pickers = {}
 			-- extensions = {
-			--   ['ui-select'] = {
+			--   [ui-select'] = {
 			--     require('telescope.themes').get_dropdown(),
 			--   },
 			-- },
