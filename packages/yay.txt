@@ -1,0 +1,8 @@
+brave-bin
+dms-shell-bin
+dms-shell-bin-debug
+spotify
+tofi
+tofi-debug
+yay
+yay-debug
