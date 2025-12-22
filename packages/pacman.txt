@@ -38,6 +38,8 @@ matugen
 neovim
 networkmanager
 niri
+noto-fonts-cjk
+noto-fonts-emoji
 npm
 nwg-look
 playerctl
@@ -48,6 +50,7 @@ pulseaudio-jack
 pulsemixer
 qt6-multimedia-ffmpeg
 reflector
+rofi-emoji-git
 ruff
 rust-analyzer
 rustup
@@ -60,6 +63,8 @@ telegram-desktop
 terminator
 tofi
 ttf-cascadia-code-nerd
+ttf-dejavu
+ttf-indic-otf
 ttf-jetbrains-mono-nerd
 unzip
 vim
