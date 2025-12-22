@@ -68,3 +68,4 @@ alias ta="tmux attach -t"
 alias tn="tmux new -s"
 
 alias grc="nvim ~/.config/ghostty/config"
+alias lg="lazygit"
