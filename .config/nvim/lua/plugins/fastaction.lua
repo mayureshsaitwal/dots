@@ -27,4 +27,7 @@ return {
 		register_ui_select = false,
 		format_right_section = nil,
 	},
+	keys = {
+		{ "<leader>ca", "<cmd>lua require('fastaction').code_action()<CR>", desc = "Display Code Action" },
+	},
 }
