@@ -4,7 +4,7 @@
   "conform.nvim": { "branch": "master", "commit": "ffe26e8df8115c9665d24231f8a49fadb2d611ce" },
   "fastaction.nvim": { "branch": "main", "commit": "b147d91727cb35be4f722f17e7d4ed5b4a5801d8" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
-  "guard-collection": { "branch": "main", "commit": "6bd5ad7941fc4c182f29c29a743eabc31fdac2e8" },
+  "guard-collection": { "branch": "main", "commit": "411971cb8b4eadfa8a4d5a64edbfda606ab30002" },
   "guard.nvim": { "branch": "main", "commit": "c1d2b668e0d1868e9be5757bb9aa278bc1f84c18" },
   "hop.nvim": { "branch": "master", "commit": "08ddca799089ab96a6d1763db0b8adc5320bf050" },
   "hover.nvim": { "branch": "main", "commit": "e61604205336d4461d2f910ecbb9f2ddc0b947a0" },
