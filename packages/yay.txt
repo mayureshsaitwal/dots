@@ -1,6 +1,8 @@
 brave-bin
 dms-shell-bin
 dms-shell-bin-debug
+rofi-emoji-git
+rofi-emoji-git-debug
 spotify
 tofi
 tofi-debug
