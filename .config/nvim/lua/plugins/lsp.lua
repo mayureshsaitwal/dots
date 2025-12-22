@@ -7,6 +7,7 @@ return {
 			"clangd",
 			"ruff",
 			"rust-analyzer",
+			"bashls",
 		})
 
 		-- local capabilities = require("blink.cmp").get_lsp_capabilities()
