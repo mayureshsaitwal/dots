@@ -45,5 +45,5 @@ bindkey "^W"     kill-whole-line
 bindkey "^U"     autosuggest-accept
 
 # Rebrand fzf keybind
-bindkey -r '^T'
+bindkey -r '^F'
 # bindkey '^U' fzf-file-widget

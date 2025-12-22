@@ -31,9 +31,9 @@ alias art="php artisan"
 
 alias pf="sudo pacman -Qe | grep"
 
-# alias ll="exa -l -g --icons"
-# alias ls="exa --icons"
-alias ls="ls --color"
+alias ll="eza -l --icons"
+alias ls="eza --icons"
+# alias ls="ls --color"
 alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
 alias v="nvim"
