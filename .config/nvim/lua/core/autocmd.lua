@@ -19,6 +19,16 @@ vim.api.nvim_create_autocmd("TermEnter", {
 		vim.cmd("startinsert!")
 	end,
 })
+
+-- Remove automatic commenting when press o
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "*",
+	desc = "Prevent comment continuation on new line",
+	callback = function()
+		vim.opt_local.formatoptions:remove({ "c", "r", "o" })
+	end,
+})
+
 -- vim.api.nvim_create_autocmd({ "BufEnter", "TermOpen" }, {
 -- 	desc = "Automatically inserts when terminal is focused",
 -- 	pattern = "*",
