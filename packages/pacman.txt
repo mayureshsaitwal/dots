@@ -39,6 +39,7 @@ matugen
 neovim
 networkmanager
 niri
+noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 npm
@@ -71,6 +72,7 @@ unzip
 vim
 wireplumber
 wl-clipboard
+wofi
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xf86-video-vesa
