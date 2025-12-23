@@ -31,8 +31,8 @@ alias art="php artisan"
 
 alias pf="sudo pacman -Qe | grep"
 
-alias ll="eza -l --icons"
-alias ls="eza --icons"
+alias ll="eza -l --icons always"
+alias ls="eza --icons always"
 # alias ls="ls --color"
 alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
