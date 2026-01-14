@@ -6,5 +6,6 @@ rofi-emoji-git-debug
 spotify
 tofi
 tofi-debug
+wlctl-bin
 yay
 yay-debug

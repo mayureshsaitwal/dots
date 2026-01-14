@@ -28,6 +28,7 @@ i3blocks
 i3lock
 i3status
 impala
+inotify-tools
 iw
 kitty
 lazygit
@@ -61,6 +62,7 @@ starship
 stow
 stylua
 sudo
+swaybg
 telegram-desktop
 terminator
 tofi
@@ -72,6 +74,7 @@ unzip
 vim
 wireplumber
 wl-clipboard
+wlctl-bin
 wofi
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
