@@ -69,3 +69,5 @@ alias tn="tmux new -s"
 
 alias grc="nvim ~/.config/ghostty/config"
 alias lg="lazygit"
+
+alias witui=wlctl
