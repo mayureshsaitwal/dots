@@ -12,10 +12,11 @@ autoload -Uz _zinit
 
 
 zinit light zsh-users/zsh-syntax-highlighting
-zinit snippet OMZ::plugins/bgnotify/bgnotify.plugin.zsh
+# zinit snippet OMZ::plugins/bgnotify/bgnotify.plugin.zsh
 zinit light zsh-users/zsh-autosuggestions
 zinit load agkozak/zsh-z
 zinit light zimfw/input
+zinit light kevinywlui/zlong_alert.zsh
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo

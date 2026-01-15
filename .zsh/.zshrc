@@ -49,8 +49,14 @@ source ~/.zsh/zinit.zsh
 
 autoload -Uz compinit && compinit
 
+# Znotify 
+zlong_duration=2
+zlong_terminal_bell=true
+zlong_ignore_cmds="vim ssh nvim"
+zlong_message='"Finished ($ftime)" "$cmd"'
+
 # Composer
-export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+# export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
 # Starship
 eval "$(starship init zsh)"
