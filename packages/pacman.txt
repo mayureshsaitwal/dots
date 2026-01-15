@@ -45,6 +45,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 npm
 nwg-look
+obsidian
 playerctl
 pulseaudio
 pulseaudio-alsa
