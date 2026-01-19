@@ -52,7 +52,7 @@ autoload -Uz compinit && compinit
 # Znotify 
 zlong_duration=2
 zlong_terminal_bell=true
-zlong_ignore_cmds="vim ssh nvim"
+zlong_ignore_cmds="vim ssh v nvim"
 zlong_message='"Finished ($ftime)" "$cmd"'
 
 # Composer

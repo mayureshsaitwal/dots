@@ -184,7 +184,7 @@ keymap("v", ".", "gcc", opts)
 -- keymap("n", "<leader>hc", "<cmd>HopChar1<cr>", opts)
 --
 -- Source / Execute
-keymap("n", "<leader>xx", "<cmd>source %<CR>", opts)
+-- keymap("n", "<leader>xx", "<cmd>source %<CR>", opts)
 
 keymap("n", "<leader>e", "<cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<cr>", opts)
 

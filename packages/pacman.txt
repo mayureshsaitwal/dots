@@ -54,6 +54,7 @@ pulseaudio-jack
 pulsemixer
 qt6-multimedia-ffmpeg
 reflector
+ripgrep
 rofi-emoji-git
 ruff
 rust-analyzer
@@ -71,6 +72,8 @@ ttf-cascadia-code-nerd
 ttf-dejavu
 ttf-indic-otf
 ttf-jetbrains-mono-nerd
+typescript
+typescript-language-server
 unzip
 vim
 wireplumber
