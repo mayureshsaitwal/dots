@@ -111,11 +111,23 @@ return {
 				reindent_linewise = true,
 			},
 		})
+
+		-- Notify
+		require("mini.notify").setup({
+			lsp_progress = { enabled = false },
+		})
+
+		-- statusline
+		require("mini.statusline").setup()
+
+		-- tabline
 		require("mini.tabline").setup({
 			show_icons = true,
 			set_vim_settings = true,
 			tabpage_section = "left",
 		})
+
+		-- Trailspace
 		require("mini.trailspace").setup()
 		-- keys = {
 		-- },
