@@ -1,0 +1,9 @@
+vim.lsp.enable({
+	"lua_ls",
+	"basedpyright",
+	"clangd",
+	"ruff",
+	"rust-analyzer",
+	"bashls",
+	"ts_ls",
+})

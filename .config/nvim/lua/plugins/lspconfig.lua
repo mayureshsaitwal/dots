@@ -1,15 +1,15 @@
 return {
 	"neovim/nvim-lspconfig",
 	config = function()
-		vim.lsp.enable({
-			"lua_ls",
-			"basedpyright",
-			"clangd",
-			"ruff",
-			"rust-analyzer",
-			"bashls",
-			"ts_ls",
-		})
+		-- vim.lsp.enable({
+		-- 	"lua_ls",
+		-- 	"basedpyright",
+		-- 	"clangd",
+		-- 	"ruff",
+		-- 	"rust-analyzer",
+		-- 	"bashls",
+		-- 	"ts_ls",
+		-- })
 
 		-- local capabilities = require("blink.cmp").get_lsp_capabilities()
 		--   capabilities.textDocument.onTypeFormatting = { dynamicRegistration = false }
