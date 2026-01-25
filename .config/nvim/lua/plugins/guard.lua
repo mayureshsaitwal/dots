@@ -7,5 +7,10 @@ return {
 		ft("cpp"):fmt("clang-format"):lint("clang-tidy")
 		ft("lua"):fmt("stylua")
 		ft("python"):fmt("ruff"):lint("ruff")
+		ft("dart"):fmt({
+			cmd = "dart",
+			args = { "format", "-" },
+			stdin = true,
+		})
 	end,
 }
