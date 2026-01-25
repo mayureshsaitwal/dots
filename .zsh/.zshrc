@@ -64,6 +64,11 @@ eval "$(starship init zsh)"
 # Direnv
 eval "$(direnv hook zsh)"
 
+# Java Home
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
+
+
 # [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 

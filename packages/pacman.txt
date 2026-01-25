@@ -1,3 +1,9 @@
+android-platform
+android-sdk
+android-sdk-build-tools
+android-sdk-cmdline-tools-latest
+android-sdk-platform-tools
+android-udev
 base
 base-devel
 bash-language-server
@@ -18,6 +24,7 @@ efibootmgr
 evtest
 eza
 firefox
+flutter-bin
 fzf
 ghostty
 git
@@ -30,6 +37,8 @@ i3status
 impala
 inotify-tools
 iw
+jdk-openjdk
+jdk21-openjdk
 kitty
 lazygit
 libinput-tools
@@ -37,6 +46,7 @@ linux-firmware
 linux-lts
 lua-language-server
 matugen
+mtpfs
 neovim
 networkmanager
 niri
@@ -75,6 +85,7 @@ ttf-jetbrains-mono-nerd
 typescript
 typescript-language-server
 unzip
+usbutils
 vim
 wireplumber
 wl-clipboard
