@@ -53,3 +53,5 @@ end
 local opt = vim.opt
 
 opt.iskeyword:append("-") -- consider string-string as whole word
+
+vim.cmd("filetype plugin indent on")
