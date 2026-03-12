@@ -1,0 +1,5 @@
+#!/bin/sh
+
+msg=$1
+
+toilet -f starwars $1 | xclip -sel c

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pacman -Qqe > /home/jd1t/dots/packages/pacman.txt
+pacman -Qqm > /home/jd1t/dots/packages/yay.txt
+# pacman -Qqe > /home/jd1t/pacman-temp.txt

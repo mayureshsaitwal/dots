@@ -1,0 +1,5 @@
+#!/bin/bash
+
+LINK="$1"
+
+spotdl $LINK -o /mnt/win1/Music/New --output-format m4a

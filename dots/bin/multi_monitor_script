@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#picom --experimental-backends &
+#dunst &
+#feh --bg-fill Downloads/wallpaper/pixelart_night_stars_clouds_trees_cozy.png

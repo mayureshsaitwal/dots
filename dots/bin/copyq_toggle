@@ -1,0 +1,12 @@
+#!/bin/sh
+
+id=$(cat /tmp/copyq)
+
+bspc node $id --flag hidden
+
+#if [[ -z $id ]]
+#then
+#	bspc node $id -g hidden=on
+#else
+#	bspc node $id -g hidden=off
+#fi

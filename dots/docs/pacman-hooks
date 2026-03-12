@@ -1,0 +1,87 @@
+# Pacman Pre/Post Hooks 
+
+ALPM Hook Summary (pacman)
+
+Trigger Types:
+ALPM hooks can react to packages or files involved in a pacman transaction.
+
+Type = File:
+- Triggers when files inside packages match given paths
+- Used when the content/location of files matters
+- Common for:
+  - Executable checks (/usr/bin, /usr/sbin)
+  - SUID/SGID audits
+  - Cache updates (icons, fonts, desktop files)
+- With NeedsTargets, stdin contains file paths
+
+Type = Package:
+- Triggers when package names match
+- Used when the identity or role of a package matters
+- Common for:
+  - Kernel or bootloader updates
+  - Service restarts
+  - Package-specific cleanup
+- With NeedsTargets, stdin contains package names
+
+Action Keywords:
+
+When:
+- PreTransaction – before packages are changed
+- PostTransaction – after the transaction completes
+
+Exec:
+- Command executed when the hook fires
+
+NeedsTargets:
+- Passes matched files or packages to the command via stdin
+- File trigger → file paths
+- Package trigger → package names
+
+Depends:
+- Ensures required packages are installed before running the hook
+
+AbortOnFail:
+- Cancels the transaction if the hook exits with a non-zero status
+
+Example: File-based Hook:
+Type = File
+Target = usr/bin/*
+- Triggers only when executables are installed or upgraded
+- Efficient and precise
+
+Example: Package-based Hook:
+Type = Package
+Target = linux*
+- Triggers when kernel packages change
+- File paths are irrelevant
+
+Example Hook Explained:
+[Trigger]
+Operation = Install
+Operation = Remove
+Operation = Upgrade
+Type = Package
+
+[Action]
+When = PostTransaction
+Exec = /bin/sh -c "pacman -Qqe > /var/lib/pacman/explicit-packages.txt"
+
+What it does:
+- Runs after any package install/remove/upgrade
+- Regenerates a list of explicitly installed packages
+
+Important note:
+- Hooks run as root
+- $HOME usually points to /root
+- Always use absolute paths in hooks
+
+Decision Rule:
+Ask: “Do I care about which files changed or which package changed?”
+
+Use case -> Type:
+- Security / permission checks -> File
+- Cache rebuilds -> File
+- Kernel / system roles -> Package
+- Service restarts -> Package
+- Cleanup on removal -> Package
+

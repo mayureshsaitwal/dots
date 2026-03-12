@@ -1,0 +1,10 @@
+#!/bin/bash
+
+MSG=${1?Error: No Message provided}
+
+cd ~/dotfiles
+git add . -v
+git commit -am "$MSG"
+git push origin master
+
+notify-send "Files Updated on Cloud"

@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+CHASSIS_TYPE=$(hostnamectl | grep "Chassis:" | awk '{print $2}')
+
+if [[ "$CHASSIS_TYPE" == "laptop" ]]; then
+  hyprctl keyword animations:enabled 0
+else
+  hyprctl keyword animations:enabled 1
+fi

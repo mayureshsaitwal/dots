@@ -1,0 +1,28 @@
+#!/bin/bash
+
+status=0
+
+do_on=("/home/user/bin/online.wav"
+       "We've connected")
+
+do_off=("/home/user/bin/offline.wav"
+        "We are offline")
+
+while [ 1 ] ;do
+    nc -zw 2 google.in 80
+    ret="$?"
+
+    if [ "$ret" = 0 -a "$status" = 0 ] ;then
+        # aplay ${do_on[0]}
+        notify-send ${do_on[1]}
+        # col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
+        status=1
+
+    elif [ "$ret" -ne 0 -a "$status" = 1 ] ;then
+        # aplay ${do_off[0]}
+        notify-send ${do_off[1]}
+        # col.active_border = rgba(212121ee) rgba(c9c9c9ee) 45deg
+        status=0 ;fi
+
+    sleep 2 ;done
+

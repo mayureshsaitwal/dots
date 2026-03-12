@@ -1,0 +1,6 @@
+#!/bin/sh
+
+pgrep -x copyq > /dev/null || sleep 5; copyq &
+copyq toggle &> /dev/null
+copyq_id=$(bspc query -N -n .hidden)
+echo "$copyq_id" > /tmp/copyq

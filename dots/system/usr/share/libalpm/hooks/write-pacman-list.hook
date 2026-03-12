@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = 📦 Updating package list ...
+When = PostTransaction
+Exec = /usr/share/libalpm/hooks.bin/write-pacman-list
