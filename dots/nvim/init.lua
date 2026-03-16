@@ -1,6 +1,0 @@
-require("core.mapleader")
-require("core.lazy")
-require("core.options")
-require("core.keymaps")
-require("core.autocmd")
-require("core.blend")
