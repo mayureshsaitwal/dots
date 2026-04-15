@@ -1,0 +1,83 @@
+/* Keybind Table Theme */
+
+configuration {
+    show-icons: false;
+    font: "JetBrains Mono 12";
+}
+
+* {
+    bg:            #1e1e2e;
+    bg-alt:        #262637;
+    fg:            #cdd6f4;
+    accent:        #89b4fa;
+
+    background-color: @bg;
+    text-color:       @fg;
+}
+
+/* WINDOW SIZE */
+window {
+    width: 70%;
+    height: 70%;
+    location: center;
+    anchor: center;
+
+    border: 2px;
+    border-radius: 14px;
+    border-color: @accent;
+
+    padding: 20px;
+}
+
+/* SEARCH BAR */
+inputbar {
+    background-color: @bg-alt;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 0 15px 0;
+}
+
+prompt {
+    text-color: @accent;
+    font: "JetBrains Mono Bold 13";
+}
+
+entry {
+    placeholder: "Search keybinds...";
+}
+
+/* TABLE VIEW */
+listview {
+    columns: 3;              /* 👈 change to 3 if you want more */
+    lines: 15;
+    spacing: 10;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+    scrollbar: true;
+}
+
+/* EACH CELL */
+element {
+    background-color: @bg-alt;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+element normal.normal {
+    background-color: @bg-alt;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color: #1e1e2e;
+}
+
+/* TEXT */
+element-text {
+    font: "JetBrains Mono 11";
+}
+
+element-text selected {
+    text-color: #1e1e2e;
+}
