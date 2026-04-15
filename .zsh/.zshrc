@@ -75,6 +75,16 @@ export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
+# Flutter
+
+export PATH=$HOME/.flutter/flutter/bin:$PATH
+
+# OLLAMA
+export OLLAMA_CONTEXT_LENGTH=128000
+
+# PI 
+export PI_CODING_AGENT_DIR=~/.config/pi/agent
+
 # [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 
