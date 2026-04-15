@@ -1,0 +1,16 @@
+{
+  "nanocoder": {
+    "providers": [
+      {
+        "name": "ollama",
+        "models": ["sorc/qwen3.5-claude-4.6-opus:latest"],
+        "baseUrl": "http://localhost:11434/v1"
+      },
+      {
+        "name": "llama-cpp",
+        "models": ["qwen3.5"],
+        "baseUrl": "http://localhost:8080/v1"
+      }
+    ]
+  }
+}

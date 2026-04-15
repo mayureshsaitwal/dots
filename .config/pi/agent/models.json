@@ -1,0 +1,10 @@
+{
+  "providers": {
+    "llama-cpp": {
+      "baseUrl": "http://localhost:8080/v1",
+      "api": "openai-completions",
+      "apiKey": "none",
+      "models": [{ "id": "Qwen-3.5-9b-claude-opus-4.7" }]
+    }
+  }
+}

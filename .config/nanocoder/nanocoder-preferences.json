@@ -1,0 +1,14 @@
+{
+  "lastUpdateCheck": 1776198666343,
+  "trustedDirectories": [
+    "/home/jd1t/Code/flutter/cliporc",
+    "/home/jd1t/temp",
+    "/home/jd1t"
+  ],
+  "lastProvider": "llama-cpp",
+  "lastModel": "qwen3.5",
+  "providerModels": {
+    "ollama": "sorc/qwen3.5-claude-4.6-opus:latest",
+    "llama-cpp": "qwen3.5"
+  }
+}

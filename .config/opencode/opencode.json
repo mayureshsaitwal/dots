@@ -1,0 +1,36 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "ollama/sorc/qwen3.5-claude-4.6-opus",
+  "provider": {
+    "llama.cpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama-server (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:8080/v1"
+      },
+      "models": {
+        "qwen3.5": {
+          "name": "qwen3.5-claude-4.6-opus (Local)",
+          "limit": {
+            "context": 128000,
+            "output": 65536
+          }
+        }
+      }
+    },
+    "ollama": {
+      "models": {
+        "sorc/qwen3.5-claude-4.6-opus": {
+          "_launch": true,
+          "name": "sorc/qwen3.5-claude-4.6-opus",
+          "tools": true
+        }
+      },
+      "name": "Ollama",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      }
+    }
+  }
+}

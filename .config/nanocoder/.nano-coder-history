@@ -1,0 +1,54 @@
+---JSON_FORMAT---[
+  {
+    "displayValue": "{}",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "this is simple flutter project. add dark theme to it ",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "create simple python file name test.py",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "yes now write the file in this dir",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "write the above python file you have created with simple test in this dir",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "create a simple python file printing hello world in this dir",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "!ls",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": ":x",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "!pwd",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "/update",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "/init",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "create simple python file saying hello world",
+    "placeholderContent": {}
+  },
+  {
+    "displayValue": "/exit",
+    "placeholderContent": {}
+  }
+]
